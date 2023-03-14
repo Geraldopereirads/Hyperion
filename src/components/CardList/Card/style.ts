@@ -24,7 +24,6 @@ export const StyledGameCard = styled.li`
 
     h4 {
       font-size: var(--text);
-
       color: var(--grey-0);
     }
 

@@ -15,9 +15,7 @@ export const GameProvider = ({ children }: IDefaultProvidersProps) => {
     try {
       const response = await api.get("/products");
       setGames(response.data);
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   };
 
   const products = localStorage.getItem("@PRODUCTLIST");
@@ -33,9 +31,7 @@ export const GameProvider = ({ children }: IDefaultProvidersProps) => {
     try {
       const response = await api.get("/categories");
       setCategories(response.data);
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   };
 
   const addProduct = (product: IGames) => {
@@ -45,14 +41,9 @@ export const GameProvider = ({ children }: IDefaultProvidersProps) => {
         "@PRODUCTLIST",
         JSON.stringify([...currentSale, { ...product }])
       );
-
-      toast.success("produto adicionado no carrinho!", {
-        autoClose: 1000,
-      });
+      toast.success("produto adicionado no carrinho!");
     } else {
-      toast.error("Este produto já foi adicionado!", {
-        autoClose: 1000,
-      });
+      toast.error("Este produto já foi adicionado!");
     }
   };
 
@@ -60,18 +51,14 @@ export const GameProvider = ({ children }: IDefaultProvidersProps) => {
     const newCartProduct = currentSale.filter((sale) => sale.id !== product.id);
     setCurrentSale(newCartProduct);
     localStorage.setItem("@PRODUCTLIST", JSON.stringify(newCartProduct));
-    toast.success("Produto removido do carrinho!", {
-      autoClose: 1000,
-    });
+    toast.success("Produto removido do carrinho!");
   };
 
   const removeAllProduct = () => {
     if (currentSale.length > 0) {
       setCurrentSale([]);
       localStorage.removeItem("@PRODUCTLIST");
-      toast.success("Todos os Games removidos!", {
-        autoClose: 1000,
-      });
+      toast.success("Todos os Games removidos!");
     }
   };
 

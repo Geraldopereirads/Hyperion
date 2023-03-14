@@ -20,6 +20,7 @@ export const UserProvider = ({ children }: IDefaultProvidersProps) => {
     const userAutoLoad = async () => {
       const token = localStorage.getItem("@TOKEN");
       const id = localStorage.getItem("@USERID");
+
       if (token) {
         try {
           const response = await api.get(`/users/${id}`, {
@@ -29,10 +30,11 @@ export const UserProvider = ({ children }: IDefaultProvidersProps) => {
           });
 
           setUser(response.data);
-          return navigate("/");
+          return navigate("/gamestore");
         } catch (error) {
           console.log(error);
           localStorage.removeItem("@TOKEN");
+          localStorage.removeItem("USERID");
           return navigate("/");
         } finally {
           return setLoading(false);
@@ -47,11 +49,12 @@ export const UserProvider = ({ children }: IDefaultProvidersProps) => {
     try {
       const response = await api.post("/register", data);
       setUser(response.data);
-      navigate("/");
-      toast.success("Usuário registrado com sucesso!");
+      navigate("/login");
+      toast.success(
+        `Usuario ${response.data.user.name}, cadastrado com sucesso!`
+      );
     } catch (error) {
-      console.error(error);
-      toast.error("Ocorreu algum erro, tente novamente!");
+      toast.error("Usuario não cadastrado!");
     } finally {
       setLoading(false);
     }
@@ -63,11 +66,10 @@ export const UserProvider = ({ children }: IDefaultProvidersProps) => {
       setUser(response.data);
       localStorage.setItem("@TOKEN", response.data.accessToken);
       localStorage.setItem("@USERID", response.data.user.id);
-      console.log(response.data);
-      navigate("/");
-      toast.success("Usuário logado com sucesso!");
+      navigate("/gamestore");
+      toast.success(`${response.data.user.name}, Bem Vindo ! `);
     } catch (error) {
-      console.error(error);
+      toast.error("Usuario ou senha invalido!");
     } finally {
       setLoading(false);
     }
@@ -78,8 +80,7 @@ export const UserProvider = ({ children }: IDefaultProvidersProps) => {
     localStorage.removeItem("@USERID");
     toast.success("Usuário deslogado com sucesso!");
     setUser(null);
-    navigate("/login");
-    console.log("oi");
+    navigate("/");
   };
 
   return (

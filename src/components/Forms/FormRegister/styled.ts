@@ -52,6 +52,7 @@ export const StyledSectionRegister = styled.section`
 
     border-radius: var(--default-border);
   }
+  
   a {
     color: var(--grey-0);
   }

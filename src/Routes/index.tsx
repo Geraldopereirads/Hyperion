@@ -7,11 +7,11 @@ import { Home } from "../Pages/HomePage";
 export const RoutesApp = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/register" element={<RegisterPage />} />
-      <Route path="/gameStore" element={<LandPage />} />
-      <Route path="*" element={<LandPage />} />
+      <Route path="/" element={<Home/>} />
+      <Route path="/login" element={<LoginPage/>} />
+      <Route path="/register" element={<RegisterPage/>} />
+      <Route path="/gamestore" element={<LandPage/>} />
+      <Route path="*" element={<LandPage/>} />
     </Routes>
   );
 };

@@ -68,7 +68,7 @@ export const Header = () => {
                 </Avatar>
               </MenuButton>
               <MenuList bg={"gray.900"}>
-                <MenuItem onClick={userLogout} bg={"gray.900"}>
+                <MenuItem className="logout" onClick={userLogout} bg={"gray.900"}>
                   Logout
                 </MenuItem>
               </MenuList>

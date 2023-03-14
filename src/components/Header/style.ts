@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   padding: 10px;
   justify-content: space-between;
-  z-index: 100000;
+  z-index: 11;
   top: 0;
 
   display: flex;
@@ -37,6 +37,7 @@ export const HeaderContainer = styled.header`
     font-weight: 700;
     color: white;
   }
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -49,14 +50,17 @@ export const HeaderContainer = styled.header`
   img {
     margin-top: 15px;
   }
+
   .chakra-avatar__badge {
     transform: translate(40%, 70%);
     width: 15px;
     height: 15px;
   }
+
   .cartContainer {
     position: relative;
   }
+
   .cartContainer > button {
     border-radius: 20px;
     color: white;
@@ -65,6 +69,7 @@ export const HeaderContainer = styled.header`
   .menuPos {
     transform: translate(0%, -10%);
   }
+
   .cartContainer > span {
     background-color: var(--primary-color);
     height: 18px;
@@ -78,6 +83,7 @@ export const HeaderContainer = styled.header`
     font-size: smaller;
     font-weight: 700;
   }
+
   span > p {
     position: absolute;
     bottom: -2px;
@@ -91,6 +97,7 @@ export const HeaderContainer = styled.header`
     height: 30px;
     padding: 0 10px;
   }
+
   .btnsLogReg {
     display: flex;
     gap: 10px;

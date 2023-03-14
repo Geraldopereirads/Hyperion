@@ -1,51 +1,50 @@
 import styled from "styled-components";
 
-export const HomeStyled = styled.main `
+export const HomeStyled = styled.main`
+  overflow: none;
 
-    overflow: none;
+  background-color: #0f0f0f;
 
-    background-color: #0F0F0F;
+  Header {
+    padding: 44px 50px;
 
-    Header {
-        padding: 1rem 5rem;
+    max-height: 60px;
 
-        max-height: 60px;
+    position: absolute;
+  }
+`;
 
-        position: absolute;
-    }
-`
 
-export const HomeStart = styled.section `
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+export const HomeStart = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-    background-image: url("https://uploaddeimagens.com.br/images/004/384/679/original/back.png?1678453845");
-    background-repeat: no-repeat;
-    background-size: cover;
-`
+  background-image: url("https://uploaddeimagens.com.br/images/004/384/679/original/back.png?1678453845");
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
 
-export const Hero = styled.div `
-   z-index: 2;
+export const Hero = styled.div`
+  z-index: 2;
 
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-   margin-top: -5rem;
+  margin-top: -80px;
 
-   h1 {
-    font-size: 130px;
+  h1 {
+    font-size: 9rem;
     font-weight: bold;
     color: white;
-   }
+  }
 
-   span {
-
+  span {
     color: white;
     font-weight: bold;
 
@@ -54,107 +53,107 @@ export const Hero = styled.div `
     border-radius: 15px;
 
     background-color: var(--primary-color);
-   }
-`
+  }
+`;
 
-export const Overlay = styled.div `
+export const Overlay = styled.div`
   width: 100%;
   height: 100vh;
-
+  
   position: absolute;
   z-index: 1;
 
   background-color: rgba(0, 0, 0, 0.75);
 `;
 
-export const About = styled.section `
+export const About = styled.section`
+  width: 100%;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
+  color: #ffffff;
+
+  z-index: 5;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  span {
+    padding: 0 16px;
+
+    text-align: center;
+  }
+
+  ul {
     width: 100%;
 
-    height: 100vh;
+    padding: 5%;
 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    gap: 35px;
+  }
+
+  ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
 
-    color: #FFFFFF;
+    z-index: 15;
 
-    z-index: 5;
-    
-    h2 {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+    gap: 15px;
+  }
 
-    span {
-        padding: 0 1rem;
-        
-        text-align: center;
-    }
+  ul li a {
+    transition: 0.5s ease-in-out;
+  }
 
+  ul li a:hover {
+    color: var(--primary-color);
+  }
+
+  ul li img {
+    min-width: 100px;
+    max-width: 150px;
+
+    border-radius: 50%;
+
+    transition: 0.5s ease-in-out;
+  }
+
+  ul li img:hover {
+    scale: 1.1;
+  }
+
+  @media (min-width: 1000px) {
     ul {
-        width: 100%;
-        
-        padding: 5%;
-
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-
-        overflow-x: auto;
-
-        gap: 35px;
-        }
-
-    ul li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        z-index: 15;
-
-        gap: 15px;
+      justify-content: center;
     }
 
-    ul li a {
-        transition: 0.5s ease-in-out;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
     }
+  }
+`;
+export const WaveBG = styled.img`
+  width: 100%;
+  z-index: 1;
 
-    ul li a:hover {
-        color: var(--primary-color);
-    }
+  position: absolute;
+  bottom: 0;
 
-    ul li img {
-        min-width: 100px;
-        max-width: 150px;
-
-        border-radius: 50%;
-
-        transition: 0.5s ease-in-out;
-    }
-
-    ul li img:hover {
-        scale: 1.1;
-    }
-  
-    @media (min-width: 1000px) {
-        ul {
-            justify-content: center;
-        }
-
-        h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        }
-    }
-`
-export const WaveBG = styled.img `
-    width: 100%;
-    z-index: 1;
-
-    position: absolute;
-    bottom: 0;
-
-    opacity: 0.5;
-`
+  opacity: 0.5;
+`;
