@@ -12,6 +12,7 @@ Além disso, utilizamos o Hookform/Resolvers para garantir que os formulários s
 
 Site feito por 5 alunos da Kenzie Academy Brasil: Geraldo Pereira, Lucas Ribeiro, Mateus Carius, Rafhael Cristian, e Vitor Hugo
 links GitHub e linkedIn dos criadores estão na home page do site
+
 Link Vercel: https://hyperion-geraldopereirads.vercel.app/
 
 
