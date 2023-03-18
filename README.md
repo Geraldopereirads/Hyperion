@@ -1,4 +1,4 @@
-Bem-vindo ao nosso site de jogos desenvolvido com as tecnologias Typescript, ReactJS, styled-components, Chakra-UI, Axios, React-DOM, React-Hook-Form, React-Icons, React-Router-DOM, React-Toastify, Swiper, Yup, Hookform/Resolvers, Emotion/Styled e Vite.
+Bem-vindo ao nosso site de jogos desenvolvido com as tecnologias Typescript, ReactJS, styled-components, Chakra-UI, Axios, React-Hook-Form, React-Icons, React-Router-DOM, React-Toastify, Swiper, Yup, Hookform/Resolvers, Emotion/Styled e Vite.
 
 Nossa plataforma é projetada para fornecer uma experiência de usuário agradável e intuitiva, com uma interface amigável e design moderno.
 
