@@ -13,7 +13,7 @@ Além disso, utilizamos o Hookform/Resolvers para garantir que os formulários s
 Site feito por 5 alunos da Kenzie Academy Brasil: Geraldo Pereira, Lucas Ribeiro, Mateus Carius, Rafhael Cristian, e Vitor Hugo
 links GitHub e linkedIn dos criadores estão na home page do site
 
-Link Vercel: https://hyperion-4uolkksfz-geraldopereirads.vercel.app/gameStore
+Link Vercel: https://hyperion-r5lkcwvyd-geraldopereirads.vercel.app/
 
 
 ![Home](https://user-images.githubusercontent.com/110185110/224864113-5a4a0eee-cc02-4004-90e0-93f4afaf7cc6.PNG)
