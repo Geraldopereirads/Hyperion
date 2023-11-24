@@ -68,7 +68,11 @@ export const Header = () => {
                 </Avatar>
               </MenuButton>
               <MenuList bg={"gray.900"}>
-                <MenuItem className="logout" onClick={userLogout} bg={"gray.900"}>
+                <MenuItem
+                  className="logout"
+                  onClick={userLogout}
+                  bg={"gray.900"}
+                >
                   Logout
                 </MenuItem>
               </MenuList>
@@ -90,9 +94,13 @@ export const Header = () => {
         >
           <DrawerOverlay />
           <DrawerContent bg={"black"}>
-            <DrawerCloseButton />
-            <DrawerHeader fontWeight={"bold"} fontSize={"lg"}>
-              "Carrinho de Compras"
+            <DrawerCloseButton color={"var(--grey-0)"} />
+            <DrawerHeader
+              color={"var(--grey-0)"}
+              fontWeight={"bold"}
+              fontSize={"lg"}
+            >
+              Carrinho de Compras
             </DrawerHeader>
             <DrawerBody className="drawer_body">
               {currentSale.map((product) => (

@@ -12,6 +12,15 @@ export const StyledCardTotalValue = styled.div`
     padding: 10px;
   }
 
+  span {
+    color: var(--grey-0);
+  }
+
+  p {
+    color: var(--grey-0);
+    margin: 0 auto;
+  }
+
   button {
     color: var(--primary-color);
     font-size: 1rem;

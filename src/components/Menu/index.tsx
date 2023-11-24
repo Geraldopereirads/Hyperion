@@ -1,10 +1,4 @@
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Button,
-} from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 
 export const GenericMenu = () => {
   <Menu>
