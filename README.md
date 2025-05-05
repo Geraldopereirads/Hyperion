@@ -1,19 +1,38 @@
-Bem-vindo ao nosso site de jogos desenvolvido com as tecnologias Typescript, ReactJS, styled-components, Chakra-UI, Axios, React-Hook-Form, React-Icons, React-Router-DOM, React-Toastify, Swiper, Yup, Hookform/Resolvers, Emotion/Styled e Vite.
+# 🎮 Plataforma de Jogos Online
 
-Nossa plataforma é projetada para fornecer uma experiência de usuário agradável e intuitiva, com uma interface amigável e design moderno.
+Bem-vindo à nossa plataforma de jogos desenvolvida com foco em performance, usabilidade e design moderno! Este projeto foi criado por cinco alunos da [Kenzie Academy Brasil](https://kenzie.com.br/) como parte de nossa formação em desenvolvimento web full stack.
 
-Usamos Typescript e ReactJS para criar uma aplicação web moderna, robusta e escalável. Com o ReactJS, podemos criar componentes reutilizáveis e eficientes para gerenciar o estado da aplicação, tornando-a rápida e responsiva. Além disso, utilizamos styled-components e Chakra-UI para criar um visual impressionante e consistente em toda a plataforma.
+## 🚀 Tecnologias Utilizadas
 
-Para melhorar a performance e a velocidade de carregamento, utilizamos o Vite, um empacotador de módulos que funciona em tempo real. E para lidar com as interações do usuário, utilizamos React-Hook-Form, React-Icons e React-Router-DOM.
+- **TypeScript**
+- **ReactJS**
+- **Vite** 
+- **Styled-components** & **Emotion/styled**
+- **Chakra UI** 
+- **React-Hook-Form**
+- **Yup** 
+- **Hookform/Resolvers** 
+- **React-Router-DOM** 
+- **React-Icons**
+- **React-Toastify** 
+- **Axios** 
+- **Swiper**
 
-Usamos o Axios para fazer requisições HTTP na nossa API e o Yup para fazer a validação de formulários. Para exibir notificações ao usuário, utilizamos o React-Toastify. E para criar efeitos visuais interessantes, usamos o Swiper e a biblioteca emotion/styled.
+##  Funcionalidades
 
-Além disso, utilizamos o Hookform/Resolvers para garantir que os formulários sejam preenchidos corretamente e que os dados sejam enviados corretamente para a API.
+-  Interface amigável e responsiva
+-  Navegação fluida entre as páginas
+-  Carrinho de compras com as funções:
+  - Adicionar itens
+  - Remover itens
+  - Atualizar quantidade e valor total
+-  Persistência de dados no **localStorage**
+-  Validação de formulários com feedback em tempo real
+-  Notificações visuais com **React-Toastify**
+-  Efeitos visuais modernos com carrosséis (**Swiper**)
+-  Código limpo, modular e escalável
 
-Site feito por 5 alunos da Kenzie Academy Brasil: Geraldo Pereira, Lucas Ribeiro, Mateus Carius, Rafhael Cristian, e Vitor Hugo
-links GitHub e linkedIn dos criadores estão na home page do site
-
-Link Vercel: https://hyperion-r5lkcwvyd-geraldopereirads.vercel.app/
+Link Vercel: https://hyperion-six.vercel.app/
 
 
 ![Home](https://user-images.githubusercontent.com/110185110/224864113-5a4a0eee-cc02-4004-90e0-93f4afaf7cc6.PNG)
