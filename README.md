@@ -32,6 +32,4 @@ Bem-vindo à nossa plataforma de jogos desenvolvida com foco em performance, usa
 -  Efeitos visuais modernos com carrosséis (**Swiper**)
 -  Código limpo, modular e escalável
 
-Link Vercel: https://hyperion-six.vercel.app/
-
 
